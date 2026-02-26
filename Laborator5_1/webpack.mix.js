@@ -12,6 +12,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+   .postCss('resources/css/app.css', 'public/css', [
+       //
+   ])
+   .js('node_modules/jquery/dist/jquery.js', 'public/js/')
+   .js('node_modules/owl.carousel/dist/owl.carousel.js', 'public/js/')
+   .sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/css/');
